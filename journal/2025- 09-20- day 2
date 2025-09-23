@@ -1,0 +1,56 @@
+# Journal — 9-20-2025 DAY 2
+
+## 1) What I learned (bullets, not prose)
+- Difference between OLTP and OLAP 
+OLTP 
+- Used for handling day-to-day transactional data
+- Optimized for insert, update, delete operations
+- Data is highly normalized (to reduce redundancy)
+OLAP 
+- Used for analytics and reporting
+- Optimized for read-heavy operations (like complex queries)
+- Data is usually denormalized (to improve performance in analysis)
+
+## 2) New vocabulary (define in your own words)
+- Kimball Approach - 
+- This is the industry-standard method most companies use to build a data warehouse. It focuses on making things easy for business users 
+  by organizing data in a simple way (usually a star schema).
+- 1NF, 2NF, 3NF (Normalization Levels)
+- Normalization levels, used in OLTP systems (like apps that handle transactions).
+  The purpose is to make the data consistent, avoid redundancy, and keep things efficient for updates.
+
+## 3) Data Engineering mindset applied (what principles did I use?)
+- Chose a star schema to make data easy to query for analytics
+- Focused on how data flows (end-to-end pipeline thinking)
+- Designed with the end user in mind (simple and fast access to data)
+
+## 4) Decisions & assumptions (why, alternatives, trade-offs)
+- For the exercise, I used a star schema because it’s easy to understand and good for fast queries.
+  I assumed the data was clean enough to build the pipeline without complex transformations.
+  Alternative approaches weren’t discussed, so I focused on making a simple and efficient design.
+
+## 5) Open questions (things I still don’t get)
+- I understand the instructions and steps we need to follow, like creating tables in the sandbox and moving data through raw and clean layers.
+  What I don’t fully get is why we need to do each step — the purpose behind them sometimes doesn’t make sense to me yet.
+  I want to understand the reasoning and benefits of each part of the pipeline, so I can connect the dots better.
+
+## 6) Next actions (small, doable steps)
+- Study more about data pipelines and their purposes
+  Practice creating and moving tables in the sandbox environment
+  Ask questions to understand why each step is important
+  Break down the assignment into smaller, manageable parts
+  Experiment with moving data between layers (raw, clean)
+
+## 7) Artifacts & links (code, queries, dashboards)
+- Code and scripts: https://github.com/ogbinar/ftw-de-journal?authuser=0
+
+### Mini reflection (3–5 sentences)
+What surprised me? What would I do differently next time? What will I watch out for in production?
+
+What surprised me was how much thought goes into designing the pipeline steps, not just writing code. 
+Next time, I would spend more time understanding the purpose behind each step before jumping into coding
+
+
+### BONUS: What is a meme that best describes what you feel or your learning today?
+
+Error 404: Understanding not found 😵‍💻
